@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- Фавиконка -->
+    <!-- Фавиконка -->
     <link rel="icon" href="ico.png" type="image/png">
-	
     <title>Скачать приложение</title>
     <style>
         * {
@@ -15,7 +14,7 @@
         }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #FF7F50 0%, #E9967A 100%);
+            background: linear-gradient(135deg, #f2dcc4 0%, #f2dcc4 100%);
             min-height: 100vh;
             display: flex;
             justify-content: center;
@@ -54,25 +53,23 @@
             margin-bottom: 30px;
             font-size: 16px;
         }
+        /* Упрощённые стили кнопки */
         .btn-download {
             display: inline-block;
-            background: #FF7F50;
-            color: white;
+            background: #f2dcc4; /* Требуемый цвет */
+            color: #5c3a2a; /* Тёмный текст для контраста */
             text-decoration: none;
             padding: 16px 40px;
             border-radius: 50px;
             font-size: 18px;
             font-weight: 600;
             transition: all 0.3s ease;
-            box-shadow: 0 5px 15px rgba(160, 82, 45, 0.4);
             margin-bottom: 30px;
-            border: none;
             cursor: pointer;
         }
         .btn-download:hover {
-            background: #FF7F50;
+            background: #e5d0b8; /* Немного темнее при наведении */
             transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(160, 82, 45, 0.6);
         }
         .instructions {
             background: #f8f9fa;
@@ -103,7 +100,7 @@
 </head>
 <body>
     <div class="container">
-         <!-- Простая круглая иконка без обводки -->
+        <!-- Простая круглая иконка без обводки -->
         <div class="app-icon">
             <img src="ico.png" alt="Иконка приложения">
         </div>
@@ -130,8 +127,8 @@
 
     <script>
         // Автоматическое определение последней версии
-        const repo = 'Fest_Site_1'; // Замените на имя репозитория
-        const user = 'LubninEgor';    // Замените на ваш GitHub username
+        const repo = 'Fest_Site_1';
+        const user = 'LubninEgor';
         
         // URL для получения последнего релиза
         const latestReleaseUrl = `https://api.github.com/repos/${user}/${repo}/releases/latest`;
