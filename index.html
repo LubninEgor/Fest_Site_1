@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Скачать файл</title>
+    <title>Скачать приложение</title>
     <style>
         body {
             display: flex;
@@ -11,34 +11,55 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background: #f0f0f0;
+            background: #f0f8ff;
             font-family: Arial, sans-serif;
         }
         .container {
             text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            background: white;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
         }
         .btn-download {
-            padding: 15px 30px;
-            font-size: 18px;
+            padding: 15px 40px;
+            font-size: 20px;
             background: #4CAF50;
             color: white;
             border: none;
-            border-radius: 5px;
+            border-radius: 8px;
             cursor: pointer;
             text-decoration: none;
             display: inline-block;
+            margin-top: 20px;
+            transition: all 0.3s;
         }
         .btn-download:hover {
-            background: #45a049;
+            background: #388E3C;
+            transform: scale(1.05);
+        }
+        .note {
+            margin-top: 25px;
+            color: #666;
+            font-size: 14px;
+            max-width: 300px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Скачать приложение</h1>
-        <a href="https://github.com/ВАШ_ЮЗЕРНЕЙМ/ИМЯ_РЕПОЗИТОРИЯ/raw/main/ПУТЬ_К_ФАЙЛУ" class="btn-download">
-            Скачать
+        <h1>Мое приложение</h1>
+        <p>Версия 1.0.0 | Для Android</p>
+        
+        <a href="https://media.githubusercontent.com/media/LubninEgor/Fest_Site_1/main/app.apk" 
+           class="btn-download">
+            📥 Скачать APK
         </a>
+        
+        <div class="note">
+            <strong>Инструкция для Android:</strong>
+            После загрузки разрешите установку из неизвестных источников в настройках безопасности
+        </div>
     </div>
 </body>
 </html>
